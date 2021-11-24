@@ -1,7 +1,7 @@
-# Личный проект «Пинк» 
+# Личный проект «Пинк»
 
-* Студент: [Андрей Масликов](https://up.htmlacademy.ru/adaptive/24/user/1556551).
-* Наставник: `Неизвестно`.
+- Студент: [Андрей Масликов](https://up.htmlacademy.ru/adaptive/24/user/1556551).
+- Наставник: `Вадим Новаш`(https://htmlacademy.ru/profile/stakeout).
 
 ---
 
