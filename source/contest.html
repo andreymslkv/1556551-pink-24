@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="./img/logo.svg" alt="Логотип мобильного приложения Pink." width="74" height="23">
+    </a>
+    <nav class="header-nav">
+      <button class="header-nav__toggler" type="button">
+        <span class="visually-hidden">
+          Открыть меню.
+        </span>
+      </button>
+      <div class="header-nav__wrapper">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header-nav__link header-nav__link--current">
+              Главная
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="contest.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#" target="_blank">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">
+      Форма для участия в конкурсе.
+    </h1>
+
+    <section class="hero">
+      <h2 class="visually-hidden">
+        Первый экран.
+      </h2>
+      <p class="index__text">
+        Конкурс на самое
+        безбашенное
+        путешествие с Пинк
+      </p>
+    </section>
+
+    <p class="calltoaction">
+      Поделитесь своей историей и получите
+      шанс выиграть ценный приз — 1000
+      миль на вашу бонусную карту!
+    </p>
+
+    <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="catalog-filter-group">
+        <label class="">
+          <legend>
+            ФАМИЛИЯ:
+          </legend>
+          <input type="text" name="" placeholder="Укажите фамилию *" required>
+          <legend>
+            ИМЯ:
+          </legend>
+          <input type="text" name="" placeholder="Введите ваше имя *" required>
+          <legend>
+            ОТЧЕСТВО:
+          </legend>
+          <input type="text" name="" placeholder="Ну и отчество тоже">
+        </label>
+      </fieldset>
+      <fieldset class="catalog-filter-group">
+        <label class="">
+          <legend class="form__title">
+            Ваши безбашенные
+            достижения в путешествии
+          </legend>
+          <input type="checkbox" name="">
+          <span class="control-mark"></span>
+          <span class="control-label">
+            Сделал селфи с акулой
+          </span>
+          <input type="checkbox" name="">
+          <span class="control-mark"></span>
+          <span class="control-label">
+            Обгорел на пляже
+          </span>
+          <input type="checkbox" name="">
+          <span class="control-mark"></span>
+          <span class="control-label">
+            Видел Чака Норриса
+          </span>
+          <input type="checkbox" name="">
+          <span class="control-mark"></span>
+          <span class="control-label">
+            Накупил сувениров
+          </span>
+          <input type="checkbox" name="">
+          <span class="control-mark"></span>
+          <span class="control-label">
+            Удержал башню
+          </span>
+          <input type="checkbox" name="">
+          <span class="control-mark"></span>
+          <span class="control-label">
+            Разгромил отель
+          </span>
+        </label>
+      </fieldset>
+      <fieldset class="catalog-filter-group">
+        <label class="">
+          <legend>
+            НОМЕР ТЕЛЕФОНА
+          </legend>
+          <input type="tel" name="phone">
+          <legend>
+            АДРЕС ПОЧТЫ
+          </legend>
+          <input type="email" name="email">
+        </label>
+      </fieldset>
+      <fieldset class="catalog-filter-group">
+        <label class="">
+          <legend>
+            С каким приложением
+            путешествовали?
+          </legend>
+          <input class="visually-hidden control-input" type="radio" name="product-group" value="aplication-type"
+            checked>
+          <span class="control-mark"></span>
+          <span class="control-label">
+            Pink для iOS
+          </span>
+          <input class="visually-hidden control-input" type="radio" name="product-group" value="aplication-type">
+          <span class="control-mark"></span>
+          <span class="control-label">
+            Pink на Android
+          </span>
+          <input class="visually-hidden control-input" type="radio" name="product-group" value="aplication-type">
+          <span class="control-mark"></span>
+          <span class="control-label">
+            Windows Phone
+          </span>
+        </label>
+      </fieldset>
+      <legend>
+        ОПИШИТЕ СВОИ ЭМОЦИИ
+      </legend>
+      <textarea name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не
+стесняясь в выражениях"></textarea>
+      <button class="form-button" type="submit">
+        <span>Отправить форму</span>
+      </button>
+      <small class="form__legend">
+        * — обязательные поля
+      </small>
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img src="./img/footer-logo.svg" alt="Логотип мобильного приложения Pink." width="145" height="40">
+      </a>
+      <ul class="social page-footer__social">
+        <li class="social__item social__item--twitter">
+          <a class="social__link" href="#" target="_blank">
+            <span class="visually-hidden">
+              Twitter.
+            </span>
+          </a>
+        </li>
+        <li class="social__item social__item--facebook">
+          <a class="social__link" href="#" target="_blank">
+            <span class="visually-hidden">
+              Facebook.
+            </span>
+          </a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a class="social__link" href="#" target="_blank">
+            <span class="visually-hidden">
+              YouTube.
+            </span>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright page-footer__copyright">
+        <span class="copyright__text">
+          Разработано
+        </span>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img src="./img/htmlacademy-logo.svg" alt="Логотип разработчика HTML Academy." width="27" height="34">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
