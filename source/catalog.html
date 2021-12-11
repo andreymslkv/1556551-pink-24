@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,9 +8,9 @@
   <title>HTML Academy: Пинк</title>
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img src="./img/logo.svg" alt="Логотип мобильного приложения Pink." width="74" height="23">
     </a>
     <nav class="header-nav">
@@ -22,12 +22,12 @@
       <div class="header-nav__wrapper">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--current">
+            <a class="header-nav__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="catalog.html">
+            <a class="header-nav__link header-nav__link--current">
               Фотографии
             </a>
           </li>
@@ -38,7 +38,7 @@
           </li>
           <li class="header-nav__item">
             <a class="header-nav__link" href="#" target="_blank">
-              HTML Academy
+              HTML Academy
             </a>
           </li>
         </ul>
@@ -47,243 +47,252 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">
-      Каталог фотографий пользователей.
+
+    <h1 class="title">
+      Фотографии
+      пользователей
     </h1>
 
-    <section class="hero">
+    <section class="posts">
       <h2 class="visually-hidden">
-        Первый экран.
+        Посты участников конкурса.
       </h2>
-      <p class="index__text">
-        Фотографии
-        пользователей
+      <p class="calltoaction">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?
       </p>
-    </section>
-
-    <p class="calltoaction">
-      Взгляните на фотографии, которые выкладывают пользователи!
-      Видите, как не хватает ваших?
-    </p>
-
-    <img class="panorama" src="./img/panorama-tablet.jpg" alt="Вид на горы и дорогу из кабинки фуикулёра." width="320"
-      height="137">
-
-    <section class="catalog">
-      <h2 class="visually-hidden">
-        Каталог участников конкурса.
-      </h2>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <blockquote>
-              <cite>
-                Анна
-              </cite>
-              <span>
-                (5 минут назад)
-              </span>
-              <p>
-                Прыгать или нет? Напишите в
-                комментарии свой совет и
-                смотрите прямую трансляцию в
-                перископе, задавайте свои вопросы!
-              </p>
-            </blockquote>
-          </a>
-          <div class="like">
-            <button class="like__button" type="button">
-              <span class="visually-hidden">
-                Нравится.
-              </span>
-            </button>
-            <p class="like__title">
-              Нравится:
-              <span class="like__number">
-                215
-              </span>
-            </p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img src="./img/photo-1.jpg" alt="Белый автомобиль на съёмках на фоне стены." class="catalog__image"
-              width="280" height="180">
-            <blockquote>
-              <cite>
-                Левон
-              </cite>
-              <span>
-                (5 часов назад)
-              </span>
-              <p>
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-            </blockquote>
-          </a>
-          <div class="like">
-            <button class="like__button" type="button">
-              <span class="visually-hidden">
-                Нравится.
-              </span>
-            </button>
-            <p class="like__title">
-              Нравится:
-              <span class="like__number">
-                356
-              </span>
-            </p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img src="./img/photo-2.jpg" alt="Музыкальная ударная установка." class="catalog__image" width="280"
-              height="180">
-            <blockquote>
-              <cite>
-                Антон
-              </cite>
-              <span>
-                (12 часов назад)
-              </span>
-              <p>
-                Соседи будут рады!
-              </p>
-            </blockquote>
-          </a>
-          <div class="like">
-            <button class="like__button" type="button">
-              <span class="visually-hidden">
-                Нравится.
-              </span>
-            </button>
-            <p class="like__title">
-              Нравится:
-              <span class="like__number">
-                666
-              </span>
-            </p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img src="./img/photo-3.jpg" alt="Отражение неба и облаков в окнах небоскрёба." class="catalog__image"
-              width="280" height="180">
-            <blockquote>
-              <cite>
-                Борис
-              </cite>
-              <span>
-                (20 часов назад)
-              </span>
-              <p>
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-            </blockquote>
-          </a>
-          <div class="like">
-            <button class="like__button" type="button">
-              <span class="visually-hidden">
-                Нравится.
-              </span>
-            </button>
-            <p class="like__title">
-              Нравится:
-              <span class="like__number">
-                215
-              </span>
-            </p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img src="./img/photo-4.jpg" alt="Рынок Кубанская бахча." class="catalog__image" width="280" height="180">
-            <blockquote>
-              <cite>
-                Сергей
-              </cite>
-              <span>
-                (25 часов назад)
-              </span>
-              <p>
-                Самая кубанская в мире!
-              </p>
-            </blockquote>
-          </a>
-          <div class="like">
-            <button class="like__button" type="button">
-              <span class="visually-hidden">
-                Нравится.
-              </span>
-            </button>
-            <p class="like__title">
-              Нравится:
-              <span class="like__number">
-                4
-              </span>
-            </p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img src="./img/photo-5.jpg" alt="Вид с обрыва." class="catalog__image" width="280" height="180">
-            <blockquote>
-              <cite>
-                Максим
-              </cite>
-              <span>
-                (40 часов назад)
-              </span>
-              <p>
-                Где снег-то?
-              </p>
-            </blockquote>
-          </a>
-          <div class="like">
-            <button class="like__button" type="button">
-              <span class="visually-hidden">
-                Нравится.
-              </span>
-            </button>
-            <p class="like__title">
-              Нравится:
-              <span class="like__number">
-                150
-              </span>
-            </p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img src="./img/photo-6.jpg" alt="Крыло самолёта, освящённое солнцем." class="catalog__image" width="280"
-              height="180">
-            <blockquote>
-              <cite>
-                Надежда
-              </cite>
-              <span>
-                (45 часов назад)
-              </span>
-              <p>
-                Всем GM и взаимные лайки!
-              </p>
-            </blockquote>
-          </a>
-          <div class="like">
-            <button class="like__button" type="button">
-              <span class="visually-hidden">
-                Нравится.
-              </span>
-            </button>
-            <p class="like__title">
-              Нравится:
-              <span class="like__number">
-                2560
-              </span>
-            </p>
-          </div>
-        </li>
-      </ul>
+      <article class="post__item">
+        <h3 class="visually-hidden">
+          Пост пользователя
+        </h3>
+        <a class="post__image" href="#">
+          <img class="panorama" src="./img/panorama-tablet.jpg" alt="Вид на горы и дорогу из кабинки фуикулёра."
+            width="320" height="137">
+        </a>
+        <blockquote>
+          <cite>
+            Анна
+          </cite>
+          <span>
+            (5 минут назад)
+          </span>
+          <p>
+            Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!
+          </p>
+        </blockquote>
+        <div class="like">
+          <button class="like__button" type="button">
+            <span class="visually-hidden">
+              Нравится.
+            </span>
+          </button>
+          <p class="like__title">
+            Нравится:
+            <span class="like__number">
+              215
+            </span>
+          </p>
+        </div>
+      </article>
+      <article class="post__item">
+        <h3 class="visually-hidden">
+          Пост пользователя
+        </h3>
+        <a class="post__image" href="#">
+          <img src="./img/photo-1.jpg" alt="Белый автомобиль на съёмках на фоне стены." class="catalog__image"
+            width="280" height="180">
+        </a>
+        <blockquote>
+          <cite>
+            Левон
+          </cite>
+          <span>
+            (5 часов назад)
+          </span>
+          <p>
+            Вчера он на луну летал, сегодня в руки к нам попал.
+          </p>
+        </blockquote>
+        <div class="like">
+          <button class="like__button" type="button">
+            <span class="visually-hidden">
+              Нравится.
+            </span>
+          </button>
+          <p class="like__title">
+            Нравится:
+            <span class="like__number">
+              356
+            </span>
+          </p>
+        </div>
+      </article>
+      <article class="post__item">
+        <h3 class="visually-hidden">
+          Пост пользователя
+        </h3>
+        <a class="post__image" href="#">
+          <img src="./img/photo-2.jpg" alt="Музыкальная ударная установка." class="catalog__image" width="280"
+            height="180">
+        </a>
+        <blockquote>
+          <cite>
+            Антон
+          </cite>
+          <span>
+            (12 часов назад)
+          </span>
+          <p>
+            Соседи будут рады!
+          </p>
+        </blockquote>
+        <div class="like">
+          <button class="like__button" type="button">
+            <span class="visually-hidden">
+              Нравится.
+            </span>
+          </button>
+          <p class="like__title">
+            Нравится:
+            <span class="like__number">
+              666
+            </span>
+          </p>
+        </div>
+      </article>
+      <article class="post__item">
+        <h3 class="visually-hidden">
+          Пост пользователя
+        </h3>
+        <a class="post__image" href="#">
+          <img src="./img/photo-3.jpg" alt="Отражение неба и облаков в окнах небоскрёба." class="catalog__image"
+            width="280" height="180">
+        </a>
+        <blockquote>
+          <cite>
+            Борис
+          </cite>
+          <span>
+            (20 часов назад)
+          </span>
+          <p>
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+        </blockquote>
+        <div class="like">
+          <button class="like__button" type="button">
+            <span class="visually-hidden">
+              Нравится.
+            </span>
+          </button>
+          <p class="like__title">
+            Нравится:
+            <span class="like__number">
+              215
+            </span>
+          </p>
+        </div>
+      </article>
+      <article class="post__item">
+        <h3 class="visually-hidden">
+          Пост пользователя
+        </h3>
+        <a class="post__image" href="#">
+          <img src="./img/photo-4.jpg" alt="Рынок Кубанская бахча." class="catalog__image" width="280" height="180">
+        </a>
+        <blockquote>
+          <cite>
+            Сергей
+          </cite>
+          <span>
+            (25 часов назад)
+          </span>
+          <p>
+            Самая кубанская в мире!
+          </p>
+        </blockquote>
+        <div class="like">
+          <button class="like__button" type="button">
+            <span class="visually-hidden">
+              Нравится.
+            </span>
+          </button>
+          <p class="like__title">
+            Нравится:
+            <span class="like__number">
+              4
+            </span>
+          </p>
+        </div>
+      </article>
+      <article class="post__item">
+        <h3 class="visually-hidden">
+          Пост пользователя
+        </h3>
+        <a class="post__image" href="#">
+          <img src="./img/photo-5.jpg" alt="Вид с обрыва." class="catalog__image" width="280" height="180">
+        </a>
+        <blockquote>
+          <cite>
+            Максим
+          </cite>
+          <span>
+            (40 часов назад)
+          </span>
+          <p>
+            Где снег-то?
+          </p>
+        </blockquote>
+        <div class="like">
+          <button class="like__button" type="button">
+            <span class="visually-hidden">
+              Нравится.
+            </span>
+          </button>
+          <p class="like__title">
+            Нравится:
+            <span class="like__number">
+              150
+            </span>
+          </p>
+        </div>
+      </article>
+      <article class="post__item">
+        <h3 class="visually-hidden">
+          Пост пользователя
+        </h3>
+        <a class="post__image" href="#">
+          <img src="./img/photo-6.jpg" alt="Крыло самолёта, освящённое солнцем." class="catalog__image" width="280"
+            height="180">
+        </a>
+        <blockquote>
+          <cite>
+            Надежда
+          </cite>
+          <span>
+            (45 часов назад)
+          </span>
+          <p>
+            Всем GM и взаимные лайки!
+          </p>
+        </blockquote>
+        <div class="like">
+          <button class="like__button" type="button">
+            <span class="visually-hidden">
+              Нравится.
+            </span>
+          </button>
+          <p class="like__title">
+            Нравится:
+            <span class="like__number">
+              2560
+            </span>
+          </p>
+        </div>
+      </article>
     </section>
 
     <p class="calltoaction">
@@ -295,36 +304,72 @@
       <h2 class="visually-hidden">
         Обработка и загрузка фото.
       </h2>
-      <img class="photopost__image" src="./img/photo-7.jpg" alt="Зимняя дорога." width="280" height="374">
-      <button class="cut" type="button">
-        <span class="visually-hidden">
-          Обрезать.
-        </span>
-      </button>
-      <button class="fill" type="button">
-        <span class="visually-hidden">
-          Залить.
-        </span>
-      </button>
-      <button class="contrast" type="button">
-        <span class="visually-hidden">
-          Контраст.
-        </span>
-      </button>
-      <form class="photopost__form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="range-cut"></label>
-        <input class="photopost__input" type="range" id="range-cut" min="0" max="100" step="1">
-        <label for="range-fill"></label>
-        <input class="photopost__input" type="range" id="range-fill" min="0" max="100" step="1">
-        <label for="range-contrast"></label>
-        <input class="photopost__input" type="range" id="range-contrast" min="0" max="100" step="1">
+      <form class="form-img" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-img__photo">
+          <label for="photo">
+            <img class="photopost__image" src="./img/photo-7.jpg" alt="Зимняя дорога." width="280" height="374">
+          </label>
+          <input class="visually-hidden" type="file" id="photo">
+        </div>
+        <ul class="form__buttons">
+          <li class="form__button">
+            <button class="cut" type="button">
+              <span class="visually-hidden">
+                Обрезать.
+              </span>
+            </button>
+            <div class="range">
+              <div class="range__scale">
+                <button class="range__button">
+                  <span class="visually-hidden">
+                    Ползунок
+                  </span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="form__button">
+            <button class="fill" type="button">
+              <span class="visually-hidden">
+                Залить.
+              </span>
+            </button>
+            <div class="range">
+              <div class="range__scale">
+                <button class="range__button">
+                  <span class="visually-hidden">
+                    Ползунок
+                  </span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="form__button">
+            <button class="contrast" type="button">
+              <span class="visually-hidden">
+                Контраст.
+              </span>
+            </button>
+            <div class="range">
+              <div class="range__scale">
+                <button class="range__button">
+                  <span class="visually-hidden">
+                    Ползунок
+                  </span>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
       </form>
-      <button class="button button--submit" type="submit">
-        Запостить
-      </button>
-      <button class="button button--reset" type="reset" disabled>
-        Отмена
-      </button>
+      <div class="form-buttongroup">
+        <button class="button button--submit" type="submit">
+          Запостить
+        </button>
+        <button class="button button--reset" type="reset" disabled>
+          Отмена
+        </button>
+      </div>
     </section>
   </main>
 

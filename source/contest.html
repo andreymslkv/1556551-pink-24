@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,9 +8,9 @@
   <title>HTML Academy: Пинк</title>
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img src="./img/logo.svg" alt="Логотип мобильного приложения Pink." width="74" height="23">
     </a>
     <nav class="header-nav">
@@ -22,7 +22,7 @@
       <div class="header-nav__wrapper">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--current">
+            <a class="header-nav__link" href="index.html">
               Главная
             </a>
           </li>
@@ -32,7 +32,7 @@
             </a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="contest.html">
+            <a class="header-nav__link header-nav__link--current">
               Конкурс
             </a>
           </li>
@@ -47,19 +47,16 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">
-      Форма для участия в конкурсе.
+    <h1 class="title">
+      Конкурс на самое
+      безбашенное
+      путешествие с Пинк
     </h1>
 
     <section class="hero">
       <h2 class="visually-hidden">
         Первый экран.
       </h2>
-      <p class="index__text">
-        Конкурс на самое
-        безбашенное
-        путешествие с Пинк
-      </p>
     </section>
 
     <p class="calltoaction">
@@ -69,105 +66,165 @@
     </p>
 
     <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="catalog-filter-group">
-        <label class="">
-          <legend>
-            ФАМИЛИЯ:
-          </legend>
-          <input type="text" name="" placeholder="Укажите фамилию *" required>
-          <legend>
-            ИМЯ:
-          </legend>
-          <input type="text" name="" placeholder="Введите ваше имя *" required>
-          <legend>
-            ОТЧЕСТВО:
-          </legend>
-          <input type="text" name="" placeholder="Ну и отчество тоже">
-        </label>
+      <fieldset class="form__field personal">
+        <ul class="form__list">
+          <li class="form__item">
+            <span class="form__title">
+              Фамилия
+            </span>
+            <label class="form__label">
+              <input class="form__input" type="text" placeholder="Укажите фамилию *" required>
+            </label>
+          </li>
+          <li class="form__item">
+            <span class="form__title">
+              Имя
+            </span>
+            <label class="form__label">
+              <input class="form__input" type="text" placeholder="Введите ваше имя *" required>
+            </label>
+          </li>
+          <li class="form__item">
+            <span class="form__title">
+              Отчество
+            </span>
+            <label class="form__label">
+              <input class="form__input" type="text" placeholder="Ну и отчество тоже">
+            </label>
+          </li>
+        </ul>
       </fieldset>
-      <fieldset class="catalog-filter-group">
-        <label class="">
-          <legend class="form__title">
-            Ваши безбашенные
-            достижения в путешествии
-          </legend>
-          <input type="checkbox" name="">
-          <span class="control-mark"></span>
-          <span class="control-label">
-            Сделал селфи с акулой
-          </span>
-          <input type="checkbox" name="">
-          <span class="control-mark"></span>
-          <span class="control-label">
-            Обгорел на пляже
-          </span>
-          <input type="checkbox" name="">
-          <span class="control-mark"></span>
-          <span class="control-label">
-            Видел Чака Норриса
-          </span>
-          <input type="checkbox" name="">
-          <span class="control-mark"></span>
-          <span class="control-label">
-            Накупил сувениров
-          </span>
-          <input type="checkbox" name="">
-          <span class="control-mark"></span>
-          <span class="control-label">
-            Удержал башню
-          </span>
-          <input type="checkbox" name="">
-          <span class="control-mark"></span>
-          <span class="control-label">
-            Разгромил отель
-          </span>
-        </label>
+      <fieldset class="form__field achievements">
+        <legend class="form__legend">
+          Ваши безбашенные
+          достижения в путешествии
+        </legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="checkbox" name="selfi" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Сделал селфи с акулой
+              </span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="checkbox" name="beach" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Обгорел на пляже
+              </span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="checkbox" name="norris">
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Видел Чака Норриса
+              </span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="checkbox" name="souvenirs">
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Накупил сувениров
+              </span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="checkbox" name="tower" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Удержал башню
+              </span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="checkbox" name="hotel">
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Разгромил отель
+              </span>
+            </label>
+          </li>
+        </ul>
       </fieldset>
-      <fieldset class="catalog-filter-group">
-        <label class="">
-          <legend>
-            НОМЕР ТЕЛЕФОНА
-          </legend>
-          <input type="tel" name="phone">
-          <legend>
-            АДРЕС ПОЧТЫ
-          </legend>
-          <input type="email" name="email">
-        </label>
+      <fieldset class="form__field contacts">
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="tel" placeholder="Номер, пожалуйста">
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Номер телефона
+              </span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="email" placeholder="Введите почту *">
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Адрес почты
+              </span>
+            </label>
+          </li>
+        </ul>
       </fieldset>
-      <fieldset class="catalog-filter-group">
-        <label class="">
-          <legend>
-            С каким приложением
-            путешествовали?
-          </legend>
-          <input class="visually-hidden control-input" type="radio" name="product-group" value="aplication-type"
-            checked>
-          <span class="control-mark"></span>
-          <span class="control-label">
-            Pink для iOS
-          </span>
-          <input class="visually-hidden control-input" type="radio" name="product-group" value="aplication-type">
-          <span class="control-mark"></span>
-          <span class="control-label">
-            Pink на Android
-          </span>
-          <input class="visually-hidden control-input" type="radio" name="product-group" value="aplication-type">
-          <span class="control-mark"></span>
-          <span class="control-label">
-            Windows Phone
-          </span>
-        </label>
+      <fieldset class="form__field applications">
+        <legend class="form__legend">
+          С каким приложением
+          путешествовали?
+        </legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="radio" name="product-group" value="aplication-type"
+                checked>
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Pink для iOS
+              </span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="radio" name="product-group" value="aplication-type">
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Pink на Android
+              </span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="visually-hidden form__input" type="radio" name="product-group" value="aplication-type">
+              <span class="control-mark"></span>
+              <span class="control-label">
+                Windows Phone
+              </span>
+            </label>
+          </li>
+        </ul>
       </fieldset>
-      <legend>
-        ОПИШИТЕ СВОИ ЭМОЦИИ
-      </legend>
-      <textarea name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не
-стесняясь в выражениях"></textarea>
-      <button class="form-button" type="submit">
+      <fieldset class="form__field emotions">
+        <legend class="form__legend">
+          Опишите свои эмоции
+        </legend>
+        <textarea name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не
+        стесняясь в выражениях"></textarea>
+      </fieldset>
+      <button class="form__button" type="submit">
         <span>Отправить форму</span>
       </button>
-      <small class="form__legend">
+      <small class="form__notice">
         * — обязательные поля
       </small>
     </form>
@@ -211,6 +268,45 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal modal-error">
+    <div class="modal__container">
+      <h2 class="modal__title">
+        Что-то пошло не так!
+      </h2>
+      <p class="modal__text">
+        Проверьте поля, выделенные красным,
+        скорее всего вы забыли их заполнить
+      </p>
+      <button class="modal-close__button" type="button">
+        <span class="visually-hidden">
+          Закрыть.
+        </span>
+        Ok
+      </button>
+    </div>
+  </div>
+
+  <div class="modal modal-success">
+    <div class="modal__container">
+      <div class="modal__content">
+        <h2 class="modal__tile">
+          Ваша заявка отправлена
+        </h2>
+        <p class="modal__text">
+          Спасибо за ваше участие, ваша заявка
+          уже поступила к нам. В ближайшее
+          время мы рассмотрим ее и
+          оповестим вас.
+        </p>
+      </div>
+      <div class="modal__button">
+        <button class="modal-close__button" type="button">
+          Закрыть окно
+        </button>
+      </div>
+    </div>
+  </div>
 
 </body>
 
